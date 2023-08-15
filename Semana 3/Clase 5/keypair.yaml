@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: create a new EC2 key pair, returns generated private key
+      amazon.aws.ec2_key:
+        name: grupo2_keypair
